@@ -13,8 +13,13 @@ function fizzBuzz(stringOne, stringTwo){
     else if (theLength % 5 == 0){
         return('Buzz')
     }
+
+    else{
+        return(`${theLength} is neither divisible by 5 nor 3`)
+    }
 }
 
-console.log(fizzBuzz('ronald','shabahran'))
-// console.log(fizzBuzz('ron','sha'))
-// console.log(fizzBuzz('ronald','shab'))
+console.log(fizzBuzz('ronald','shabahran')) // divisible by both 3 and 5
+// console.log(fizzBuzz('ron','sha')) // divisible by 3
+// console.log(fizzBuzz('ronald','shab')) // divisible by 5
+// console.log(fizzBuzz('ronald','shabahranxi')) // not divisible by either 5 or 3
